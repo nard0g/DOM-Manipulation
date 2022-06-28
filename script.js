@@ -7,10 +7,10 @@ content.textContent = 'This is the glorious text-content!';
 container.appendChild(content);
 
 // Add red paragraph to container
-//const redParagraph = document.createElement('p');
-//redParagraph.textContent = "Hey I'm red!"
-//redParagraph.style.color = 'red'
-//container.append(redParagraph)
+const redParagraph = document.createElement('p');
+redParagraph.textContent = "Hey I'm red!"
+redParagraph.style.color = 'red'
+container.append(redParagraph)
 
 // Add blue h3 to container
 const heading3 = document.createElement('h3')
@@ -36,7 +36,10 @@ containContainer.append(divP)
 container.append(containContainer)
 
 const btn = document.querySelector('#btn');
-btn.onclick = () => alert("Hello World");
+//btn.onclick = () => alert("Hello World");
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
 
 const btn1 = document.querySelector('#btn1');
 btn1.addEventListener('click', () => {
