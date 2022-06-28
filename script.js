@@ -40,9 +40,6 @@ btn.onclick = () => alert("Hello World");
 
 const btn1 = document.querySelector('#btn1');
 btn1.addEventListener('click', () => {
-//  alert("Hello World");
-    const redParagraph = document.createElement('p');
-    redParagraph.textContent = "Hey I'm red!"
-    redParagraph.style.color = 'red'
-    container.append(redParagraph)
+  alert("Hello World");
+
 });
